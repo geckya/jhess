@@ -1,0 +1,15 @@
+# Site settings
+title: Judy Higdon Estate Sale Services
+email: jahigdon54@yahoo.com
+description: > # this means to ignore newlines until "baseurl:"
+  Judy Higdon Estate Sale Services - bringing integrity, quality, and excellence to estate liquidations throughout the Dallas/Ft. Worth Metroplex area.
+url: '/'
+baseurl: '/'
+#twitter_username: 
+
+# Build settings
+markdown: kramdown
+
+
+paginate: 3
+paginate_path: "blog/page:num"
