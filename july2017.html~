@@ -3,6 +3,11 @@ layout: default
 title: Estate Sales
 section_id: estate-sales
 works:
+  - image: images/sandhurst/IMG_1035.JPG
+    title: 
+    link_to: images/sandhurst/IMG_1035.JPG
+    klass: graphic-design
+    desc: 
   - image: images/july2017/img_000.jpg
     title:
     link_to: images/july2017/img_000.jpg

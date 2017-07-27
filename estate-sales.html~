@@ -3,7 +3,7 @@ layout: default
 title: Estate Sales
 section_id: estate-sales
 works:
-  - image: images/july2017/img_034.JPG
+  - image: images/july2017/img_001.JPG
     title: July 2017
     link_to: july2017.html
     klass: graphic-design
