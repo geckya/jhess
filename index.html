@@ -48,19 +48,6 @@ slides:
         - text: Contact
           link_to: contact.html
 
-
-works:
-  - image: images/projects/assemble.png
-    title: Assemble
-    link_to: projects/assemble.html
-    klass: graphic-design
-    desc: Tools &amp; Infrastructure
-
-services:
-  - icon: star
-    title: organization
-    desc: 
-
 ---
 
 
@@ -122,182 +109,26 @@ services:
   </div>
 </div>
 
-<!--
-<div class="four spacing"></div>
-
-<div class="row">
-  <div class="medium-3 large-3 columns">
-    {% include icon-text.html title='Creative design' desc='Est aperiam ex sint maiores aliquam delectus minima rerum et natus rerum sit quae nostrum.' icon_class='fa fa-flask' delay='0' shape_class='icon-text-circle' %}
-  </div>
-  <div class="medium-3 large-3 columns">
-    {% include icon-text.html title='Creative design' desc='Est aperiam ex sint maiores aliquam delectus minima rerum et natus rerum sit quae nostrum.' icon_class='fa fa-paper-plane-o' delay='200' shape_class='icon-text-circle' %}
-  </div>
-  <div class="medium-3 large-3 columns">
-    {% include icon-text.html title='Creative design' desc='Est aperiam ex sint maiores aliquam delectus minima rerum et natus rerum sit quae nostrum.' icon_class='fa fa-tablet' delay='400' shape_class='icon-text-circle' %}
-  </div>
-  <div class="medium-3 large-3 columns">
-    {% include icon-text.html title='Creative design' desc='Est aperiam ex sint maiores aliquam delectus minima rerum et natus rerum sit quae nostrum.' icon_class='fa fa-comments-o' delay='600' shape_class='icon-text-circle' %}
-  </div>
-</div>
-
-<div class="spacing"></div>
-
-<div class="full" style="background: #f5f5f5;">
-  <div class="row">
-    <div class="large-12 columns">
-      {% include section-header.html title="Our mission" %}
-      <div class="spacing"></div>
-      <p>
-        To be an inclusive community for data scientists and technologists to volunteer and collaborate on projects that make a positive impact on society.
-      </p>
-      <div class="three spacing"></div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="large-12 columns">
-      {% include section-header.html title="Our projects" %}
-      <div class="spacing"></div>
-      <p>
-        Data for Democracy looks for projects that have a strong collaborative nature, and leverage data and technology to create positive social impact. We engage in a mix of community-led projects, which are proposed and self-organized by Data for Democracy members, and partner-led projects, which involve more formal collaboration with city governments and local and international NGOs.
-      </p>
-      <div class="three spacing"></div>
-    </div>
-  </div>
-
-  <div class="mod modGallery">
-    <ul class="gallery small-block-grid-2 medium-block-grid-3 large-block-grid-4">
-      {% for work in page.works %}
-        <li class="{{ work.klass }}">
-          <a href='{{ work.link_to }}'>
-            <img alt="" src="{{ work.image }}" />
-            <div class='overlay'>
-              <div class='thumb-info'>
-                <h3>{{ work.title }}</h3>
-                <p>{{ work.desc }}</p>
-              </div>
-            </div>
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
-</div>
-
-
-<div class='full'>
-  <div class='row'>
-    <div class='large-12 columns'>
-      {% include section-header.html title="What we can do" %}
-      <div class='spacing'></div>
-      <p>Data people have a lot to offer. We’re driven by a passion to find the truth. We understand how information can be used to make better decisions and improve our communities.</p>
-      <p>Data for Democracy is an inclusive community for data scientists and technologists. It is a space for like-minded people to organize, to transform, to collaborate, and to support each other's projects. We help each other track down datasets, refine models, improve visualizations, team up on apps, debug code, promote work, and connect with communities who need our analysis. </p>
-      <div class='three spacing'></div>
-    </div>
-  </div>
-  <div class='row'>
-    <div class='medium-6 columns'>
-      <img class="fadeinleft" alt="" src="images/hand-tablet.png" />
-      <div class='three spacing'></div>
-    </div>
-    <div class='medium-6 columns'>
-      {% for service in page.services %}
-        <div class='fadein mod modIconText' data-delay='{{ 300 | times:forloop.index0 }}'>
-          <div class='icon-text-simple'>
-            <i class='fa fa-{{service.icon}}'></i>
-            <h3>{{service.title}}</h3>
-            <p>{{service.desc}}</p>
-          </div>
-          <div class='two spacing'></div>
-        </div>
-      {% endfor %}
-    </div>
-  </div>
-  <div class='spacing'></div>
-</div>
-
-
-<div class='full parallax' style='background-image: url(images/banners/hands-2400x1000.png); color: #fff;'>
-  <div class='row'>
-    <div class='large-12 columns'>
-      {% include section-header.html title="The Numbers" color="#fff" %}
-      <div class='spacing'></div>
-      <p class='centered-text' style='color: #ccc;'>
-	Our group, formed in December 2016, has grown into an inclusive community of hundreds of active volunteers around the world, collaborating on mission-driven technology with impact.
-      </p>
-      <div class='two spacing'></div>
-    </div>
-  </div>
-  <div class='row'>
-    {% for milestone in page.milestones %}
-      <div class='medium-3 large-3 columns'>
-        <div class='mod modMilestone'>
-          <i class='fa fa-{{milestone.icon}}'></i>
-          <strong data-from='{{milestone.from}}' data-to='{{milestone.to}}'>&nbsp;</strong>
-          <span>{{milestone.title}}</span>
-          <div class='four spacing'></div>
-        </div>
-      </div>
-    {% endfor %}
-  </div>
-  <div class='two spacing'></div>
-</div>
-
-<div class='full'>
-  <div class='row'>
-    <div class='large-12 columns'>
-      {% include section-header.html title="Our team" %}
-      <div class='spacing'></div>
-      <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing.
-      </p>
-      <div class='two spacing'></div>
-    </div>
-  </div>
-  <div class='row'>
-    {% for member in site.data.members %}
-      <div class='small-6 medium-3 large-3 columns'>
-        <div class='mod modTeamMember'>
-          <div class='member'>
-            <img class="avatar" alt="" src="{{ member.avatar }}" />
-            <div class='overlay'>
-              <div class='intro'>
-                <h3>{{member.name}}</h3>
-                <p>{{member.position}}</p>
-                <ul class='socials'>
-                  {% for social in member.socials %}
-                    <li>
-                      <a href='{{social.link}}'>
-                        <i class='fa fa-{{social.icon}}'></i>
-                      </a>
-                    </li>
-                  {% endfor %}
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class='two spacing'></div>
-        </div>
-      </div>
-    {% endfor %}
-  </div>
-</div>
-  
-{% include our-partners.html %}
-
-
-<div class='full no-padding' style='background: #fff'>
-  <div class='two spacing'></div>
-  <div class='mod modCallToAction'>
+  <div class='full'>
     <div class='row'>
-      <div class='medium-9 large-9 columns'>
-        <p>Whether you’re an experienced data scientist looking for a side project, still learning, or just trying to figure out how you can help, we’re inviting you to join us.</p>
+      <div class='medium-8 columns'>
+	<h2>Join our e-mail list:</h2>
+	<br>
+        <div class='form'>
+          <div class='row'>
+            <form method='POST' action="https://formspree.io/jahigdon54@yahoo.com">
+              <div class='large-12 columns'>
+                <p id='thanks' style='display: none;'>
+                  Thanks for contacting us, we'll be in touch soon!
+                </p>
+              </div>
+              <div class='medium-12 columns'>
+                <input class='required' name='name' placeholder='NAME' type='text'>
+                <input class='required email' name='e-mail' placeholder='E-MAIL' type='text'>
+                <input class='button white' type='submit'>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class='two spacing'></div>
       </div>
-      <div class='medium-3 large-3 columns'>
-        <a class='button' href='/contact.html'>Join us</a>
-      </div>
-    </div>
-  </div>
-  <div class='spacing'></div>
-</div>
--->
