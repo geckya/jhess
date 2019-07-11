@@ -1,0 +1,82 @@
+---
+layout: default
+title: Estate Sales
+section_id: estate-sales
+works:
+  - image: images/june2019_img001.jpg
+    title: 
+    link_to: images/june2019_img001.jpg
+    klass: graphic-design
+    desc: 
+---
+
+
+<div class='full parallax' style='background-image: url(images/rgsitting.png); color: #fff;'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="Estate Sales" tagline="" color="#fff" class="big" %}
+    </div>
+  </div>
+  <div class='four spacing'></div>
+</div>
+
+<div class='full'>
+  <div class='row'>
+    <div class='twelve columns'>
+     <h1>UPCOMING ESTATE SALE</h1>
+      <h2>SEPTEMBER 30 - OCTOBER 1</h2>
+      
+      <br><br>
+      <h1>ESTATE SALE DETAILS</h1>
+    </div>
+  </div>
+</div>
+
+    <div class='mod modGallery'>
+      <!-- 
+      <div class='gallery-nav'>
+        <ul>
+          <li class='current'>
+            <a data-cat='all' href='#'>All</a>
+          </li>
+          <li>
+            <a data-cat='graphic-design' href='#'>Graphic Design</a>
+          </li>
+          <li>
+            <a data-cat='web-design' href='#'>Web Design</a>
+          </li>
+          <li>
+            <a data-cat='brand' href='#'>Brand</a>
+          </li>
+          <li>
+            <a data-cat='development' href='#'>Development</a>
+          </li>
+          <li>
+            <a data-cat='print' href='#'>Print</a>
+          </li>
+        </ul>
+      </div>
+-->      
+
+      <ul class='gallery large-block-grid-4 medium-block-grid-3 small-block-grid-2'>
+
+        {% for work in page.works %}
+          <li class="{{ work.klass }}">
+            <a href='{{ work.link_to }}'>
+              <img alt="" src="{{ work.image }}" />
+              <div class='overlay'>
+                <div class='thumb-info'>
+                  <h3>{{ work.title }}</h3>
+                  <p>{{ work.desc }}</p>
+                </div>
+              </div>
+            </a>
+          </li>
+        {% endfor %}
+
+      </ul>
+    </div>
+  </div> 
+
+  <div class='four spacing'></div>
+</div>
