@@ -3,7 +3,7 @@ p {
 }
 
 .f-topbar-fixed.shrink .top-bar .title-area img, .f-topbar-fixed.shrink .top-bar .title-area li img, .f-topbar-fixed.shrink .top-bar .title-area a img {
-    width: 55%;
+        width: 55%;
 }
 
 .bg-dark {
