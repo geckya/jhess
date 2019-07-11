@@ -1,0 +1,131 @@
+---
+layout: default
+title: Estate Sales
+section_id: estate-sales
+works:
+  - image: images/june2019_img001.jpg
+    title:
+    link_to: images/june2019_img001.jpg
+    klass: graphic-design
+    desc:
+---
+
+
+<div class='full parallax' style='background-image: url(images/rgsitting.png); color: #fff;'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="Estate Sales" tagline="" color="#fff" class="big" %}
+    </div>
+  </div>
+  <div class='four spacing'></div>
+</div>
+
+<div class='full'>
+  <div class='row'>
+    <div class='twelve columns'>
+      <h1>Completed Sale</h1>
+      <h2>Saturday, June 29 and Sunday, June 30, 9-5pm</h2>
+       <h3>Richardson, TX 75230</h3>
+
+<p>Several years of living in North Korea and a lifetime of world travel has culminated in a fascinating and unique collection of treasures. Listed below are but a few examples of the exceptional items that will be available. Pictures are included for your consideration, but these gems should be examined in person in order to appreciate their full splendor!</p>
+
+<h3>ART</h3>
+Harwood K. Smith - watercolors (2)
+Salvador Dali - etching
+Charley Harper - signed/numbered serigraphs and prints
+Chris Baumgartner - mixed media collage 'Red Heat'
+The War is Over - WWII - large grouping of newspapers in oak frame
+Kaiko Moti - lithograph
+Arleen Husby - oil painting
+Ruth Alexander - watercolor
+Don Eckleberry - signed/numbered lithograph 'Skimmers on the Beach'
+Robert A. Garland - signed prints
+E. John Robinson - signed prints
+Kittye Roberts - acrylic on board
+Marino - oil on board
+Moreno - pin and ink
+Original oil - d'apres HENNER
+Original oil on canvas (portrait of a boy) - Late 1800's - artist unknown
+Japanese painting on silk, needlework, silks - Kobe frames
+Lithograph by Sister Mary Andre
+Lalique - Madonna and child statue
+
+<h3>FURNITURE AND APPLIANCES</h3>
+Oriental black lacquer cabinet with relief - hand painted
+Area rugs - all sizes
+Dining table - 6 white Parsons chairs
+Antique child's rocking chair
+Freezer
+LG Refrigerator
+LG dryer
+Whirlpool washing machine
+Portable fireplace heater
+Vintage sleigh bed (twin)
+
+<h3>OTHER</h3>
+Albums - Beatles, John Lennon, Tom Petty, Rolling Stones, David Bowie and so many more!
+Vintage Games - The Legend of Zelda (like new!), Carrom board game, Juicy Couture Monopoly
+Vintage Murano Art Glass Clown Wine Decanter
+Hadeland Norway Cobalt Vases
+Waterford crystal
+Val St. Lambert
+Sterling and silver plate
+Nolan Ryan signed baseball
+Bobby Valentine signed baseball card
+Harper Lee 'To Kill A Mockingbird' - Ukranian Edition
+Lawn mowers, bicycles, golf clubs and garage full!
+
+<p>Click <a href='https://www.estatesales.net/TX/Richardson/75082/2268291'>here</a> for pictures</p>
+    </div>
+  </div>
+</div>
+
+
+    <div class='mod modGallery'>
+      <!-- 
+      <div class='gallery-nav'>
+        <ul>
+          <li class='current'>
+            <a data-cat='all' href='#'>All</a>
+          </li>
+          <li>
+            <a data-cat='graphic-design' href='#'>Graphic Design</a>
+          </li>
+          <li>
+            <a data-cat='web-design' href='#'>Web Design</a>
+          </li>
+          <li>
+            <a data-cat='brand' href='#'>Brand</a>
+          </li>
+          <li>
+            <a data-cat='development' href='#'>Development</a>
+          </li>
+          <li>
+            <a data-cat='print' href='#'>Print</a>
+          </li>
+        </ul>
+      </div>
+      -->
+
+      <ul class='gallery large-block-grid-4 medium-block-grid-3 small-block-grid-2'>
+
+        {% for work in page.works %}
+          <li class="{{ work.klass }}">
+            <a href='{{ work.link_to }}'>
+              <img alt="" src="{{ work.image }}" />
+              <div class='overlay'>
+                <div class='thumb-info'>
+                  <h3>{{ work.title }}</h3>
+                  <p>{{ work.desc }}</p>
+                </div>
+              </div>
+            </a>
+          </li>
+        {% endfor %}
+
+      </ul>
+    </div>
+  </div>
+
+  <div class='four spacing'></div>
+</div>
