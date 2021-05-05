@@ -1,134 +1,196 @@
----
-layout: default
-section_id: home
-milestones:
-  - icon: coffee
-    from: 0
-    to: 1015
-    title: Liquidation sales
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Judy Higdon Estate Sale Services</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+      <!--Main Navigation-->
+  <header>
+    <style>
+      /* Carousel styling */
+      #introCarousel,
+      .carousel-inner,
+      .carousel-item,
+      .carousel-item.active {
+        height: 100vh;
+      }
 
-slides:
-  - bg: images/sittingroom.png
-    small_title:
-      klass: bottom-to-top
-      text: 
-    title:
-      klass: bottom-to-top
-      text: Quality
-    buttons:
-      klass: bottom-to-top
-      items:
-        - text: What we do
-          link_to: services.html
-  - bg: images/deskandclock.jpg
-    klass: centered-text
-    small_title:
-      klass: bottom-to-top
-      text: 
-    title: 
-      klass: bottom-to-top
-      text: Excellence
-    buttons:
-      klass: bottom-to-top
-      items:
-        - klass: boxed
-          text: Who we are
-          link_to: services.html
-  - bg: images/tablecloseup.jpg
-    klass: right
-    small_title:
-      klass: bottom-to-top
-      text: 
-    title:
-      klass: bottom-to-top
-      text: Integrity
-    buttons:
-      klass: bottom-to-top
-      items:
-        - text: Contact
-          link_to: contact.html
+      .carousel-item:nth-child(1) {
+        background-image: url('images/sittingroom.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
 
----
+      .carousel-item:nth-child(2) {
+        background-image: url('images/deskandclock.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
 
+      .carousel-item:nth-child(3) {
+        background-image: url('images/tablecloseup.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
 
-<div class='mod modDefaultSlider'>
-  <div class='sequence' data-autostop='on' data-timeout='0'>
-    <a class='sequence-prev' href='javascript:void(0);'>
-      <span></span>
-    </a>
-    <a class='sequence-next' href='javascript:void(0);'>
-      <span></span>
-    </a>
-    <ul class='sequence-pagination'>
-      {% for slide in page.slides %}
-        {% if forloop.first %}
-          {% assign class = 'current' %}
-        {% else %}
-          {% assign class = '' %}
-        {% endif %}
-        <li class="{{class}}"></li>
-      {% endfor %}
-    </ul>
-    <ul class='sequence-canvas'>
-      {% for slide in page.slides %}
-        {% if forloop.first %}
-          {% assign style = 'static' %}
-        {% else %}
-          {% assign style = '' %}
-        {% endif %}
+      /* Height for devices larger than 576px */
+      @media (min-width: 992px) {
+        #introCarousel {
+          margin-top: -2px;
+        }
+      }
 
-        <li class='frame {{style}} {{ slide.klass }}'>
-          <div class='bg' style='background-image: url({{ slide.bg}});'></div>
-          <div class='small-title {{ slide.small_title.klass }}'>
-            <div class='row'>
-              <div class='large-12 columns'>
-                <h2>{{ slide.small_title.text }}</h2>
+      .navbar .nav-link {
+        color: #333 !important;
+      }
+    </style>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand nav-link" target="_blank" href="index.html">
+          <img alt="Judy Higdon Estate Sale Services" src="images/jhess_logo.png"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+          aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 py-5">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="#intro">Home</a>
+            </li>
+            <li class="nav-item navbar-light">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="estate-sales.html">Estate Sales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav list-inline">
+            <!-- Icons -->
+            <li class="">
+              <a class="nav-link" href="https://www.facebook.com/judyhigdonestatesaleservices" rel="nofollow" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Carousel wrapper -->
+    <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="0" class="active"></li>
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="1"></li>
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="2"></li>
+      </ol>
+
+      <!-- Inner -->
+      <div class="carousel-inner">
+        <!-- Single item -->
+        <div class="carousel-item active">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white text-center">
+                <h1 class="mb-3">Quality</h1>
+                <a class="btn btn-outline-light btn-lg m-2" href="services.html"
+                  role="button">What we do</a>
               </div>
             </div>
-          </div>
-          <div class='title {{ slide.title.klass }}'>
-            <div class='row'>
-              <div class='large-12 columns'>
-                <h2>{{ slide.title.text }}</h2>
-              </div>
-            </div>
-          </div>
-          <div class='buttons-wrapper {{ slide.buttons.klass }}'>
-            <div class='row'>
-              <div class='large-12 columns'>
-                <div class='two spacing'></div>
-                {% for button in slide.buttons.items %}
-                  <a class='button {{ button.klass }}' href='{{ button.link_to }}'>{{ button.text }}</a>
-                {% endfor %}
-              </div>
-            </div>
-          </div>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
-</div>
-
-  <div class='full'>
-    <div class='row'>
-      <div class='medium-8 columns'>
-	<h2>Join our e-mail list:</h2>
-	<br>
-        <div class='form'>
-          <div class='row'>
-            <form method='POST' action="https://formspree.io/jahigdon54@yahoo.com">
-              <div class='large-12 columns'>
-                <p id='thanks' style='display: none;'>
-                  Thanks for contacting us, we'll be in touch soon!
-                </p>
-              </div>
-              <div class='medium-12 columns'>
-                <input class='required' name='name' placeholder='NAME' type='text'>
-                <input class='required email' name='e-mail' placeholder='E-MAIL' type='text'>
-                <input class='button white' type='submit'>
-              </div>
-            </form>
           </div>
         </div>
-        <div class='two spacing'></div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white text-center">
+                <h1 class="mb-3">Excellence</h1>
+                <a class="btn btn-outline-light btn-lg m-2" href="about.html"
+                  role="button">Who we are</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white text-center">
+                <h1 class="mb-3">Integrity</h1>
+                <a class="btn btn-outline-light btn-lg m-2" href="contact.html"
+                  role="button">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <!-- Inner -->
+
+      <!-- Controls -->
+      <a class="carousel-control-prev" href="#introCarousel" role="button" data-mdb-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#introCarousel" role="button" data-mdb-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- Carousel wrapper -->
+  </header>
+  <!--Main Navigation-->
+
+  <!--Footer-->
+  <footer class="bg-light text-lg-start">
+    <hr class="m-0" />
+
+    <div class="text-center py-4 align-items-center">
+      <p>Follow us on Facebook
+      <a href="https://www.facebook.com/judyhigdonestatesaleservices" class="btn btn-primary m-1" role="button" rel="nofollow"
+        target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2021 Copyright:
+      <a class="text-dark" href="https://judyhigdonestatesales.com/">Judy Higdon Estate Sale Services</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!--Footer-->
+    <!--  -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

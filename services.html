@@ -1,65 +1,122 @@
----
-layout: default
-title: Services
-section_id: services
-services_left:
-  - icon: paperclip
-    title: Organization
-    desc: We will organize, arrange and display all items to be sold. If, during that process, we encounter items that appear to be of especially sentimental value, or we encounter valuable items that you have not told us about, we will consult with you.  We will use available tables and display cases, as necessary.  To a limited extent, we will also clean the area where the sale is to be conducted, gather and dispose of items that cannot be sold and clean and polish selected items being sold, such as silverware, fine china and furniture, if necessary.
-  - icon: edit
-    title: Pricing
-    desc: We will appraise all items to be sold and will mark prices on them using price stickers, tags or signs that we will provide.  If we believe there are items of value that are not within our area of expertise, we may choose to engage an outside appraiser having the necessary expertise, at our expense. We welcome your input regarding the value of specific items; however, given our substantial experience in this area, we reserve the right to make all final pricing decisions.
-  - icon: microphone
-    title: Advertising
-    desc: We will arrange for appropriate advertisements and permits regarding the sale. In addition, subject to municipal ordinances restricting the placement of signs, we will prepare and place several signs in conspicuous locations in the area of the sale on the morning it is to start and take them down each day. 
-services_right:
-  - icon: lock
-    title: Security
-    desc: We will take reasonable steps to guard against theft to the extent possible.  For example, in selecting the number of employees to hire for the sale and in deciding how to arrange the items being sold, security will be one of our primary considerations.
-  - icon: money
-    title: Sale
-    desc: We will conduct the sale in a professional and efficient manner. We will conduct the sale with two objectives -  A) Sell every available item and B) Maximize the proceeds from the sale.  During the course of the sale, we may negotiate prices with customers, as we consider appropriate in order to achieve the two objectives stated above. We normally hold all prices firm the first day and lower the prices on the second or last day of the sale. However, you may establish minimum prices for a small number of items, if it is agreed upon before this contract is signed.  To assist with the sale, we will hire as many individuals as we believe are reasonably necessary, from a pool of honest, experienced, reliable individuals that we hire for that purpose.
-  - icon: check
-    title: Disposal of Unsold Items
-    desc: There will be unsold items at the conclusion of the sale.  We will be glad to suggest name of charities that will pick up the unsold items at your convenience or we will arrange at our expense to have these items removed from your property.  We have found that most clients prefer to go through the unsold items at the conclusion of the sale.
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Judy Higdon Estate Sale Services</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+      <!--Main Navigation-->
+  <header>
+    <style>
+      .navbar .nav-link {
+        color: #333 !important;
+      }
+    </style>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand nav-link" href="index.html">
+          <img alt="Judy Higdon Estate Sale Services" src="images/jhess_logo.png"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+          aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 py-5">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="estate-sales.html">Estate Sales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
 
-<div class='full parallax' style='background-image: url(images/chinatable.jpg); color: #fff;'>
-  <div class='row'>
-    <div class='large-12 columns'>
-      {% include section-header.html title="Our services" tagline="" color="#fff" class="big" %}
-    </div>
-  </div>
-  <div class='four spacing'></div>
-</div>
-
-
-<div class='full'>
-  <div class='row'>
-    <div class='medium-6 columns'>
-      {% for service in page.services_left %}
-        <div class='fadein mod modIconText' data-delay='{{ 300 | times:forloop.index0 }}'>
-          <div class='icon-text-simple'>
-            <i class='fa fa-{{service.icon}}'></i>
-            <h3>{{service.title}}</h3>
-            <p>{{service.desc}}</p>
-          </div>
-          <div class='two spacing'></div>
+          <ul class="navbar-nav list-inline" style="color: #333;">
+            <!-- Icons -->
+            <li class="">
+              <a class="nav-link" href="https://www.facebook.com/judyhigdonestatesaleservices" rel="nofollow" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+          </ul>
         </div>
-      {% endfor %}
-    </div>
-    <div class='medium-6 columns'>
-      {% for service in page.services_right %}
-        <div class='fadein mod modIconText' data-delay='{{ 300 | times:forloop.index0 }}'>
-          <div class='icon-text-simple'>
-            <i class='fa fa-{{service.icon}}'></i>
-            <h3>{{service.title}}</h3>
-            <p>{{service.desc}}</p>
-          </div>
-          <div class='two spacing'></div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+  <!--Main Navigation-->
+
+  <!--Main layout-->
+  <main class="mt-5">
+    <div class="container">
+      <!--Section: Content-->
+      <section>
+        <div class="row">
+            <h4><strong>What we do</strong></h4>
+	    <br>
+	    <p><strong>Organization</strong></p>
+            <p class="text-muted">We will organize, arrange and display all items to be sold. If, during that process, we encounter items that appear to be of especially sentimental value, or we encounter valuable items that you have not told us about, we will consult with you. We will use available tables and display cases, as necessary. To a limited extent, we will also clean the area where the sale is to be conducted, gather and dispose of items that cannot be sold and clean and polish selected items being sold, such as silverware, fine china and furniture, if necessary.
+	    </p>
+	    <p><strong>Pricing</strong></p>
+	    <p class="text-muted">We will appraise all items to be sold and will mark prices on them using price stickers, tags or signs that we will provide. If we believe there are items of value that are not within our area of expertise, we may choose to engage an outside appraiser having the necessary expertise, at our expense. We welcome your input regarding the value of specific items; however, given our substantial experience in this area, we reserve the right to make all final pricing decisions.
+	    </p>
+	    <p><strong>Advertising</strong></p>
+	    <p class="text-muted">We will arrange for appropriate advertisements and permits regarding the sale. In addition, subject to municipal ordinances restricting the placement of signs, we will prepare and place several signs in conspicuous locations in the area of the sale on the morning it is to start and take them down each day.
+	    </p>
+	    <p><strong>Security</strong></p>
+	    <p class="text-muted">We will take reasonable steps to guard against theft to the extent possible. For example, in selecting the number of employees to hire for the sale and in deciding how to arrange the items being sold, security will be one of our primary considerations.
+	    </p>
+	    <p><strong>Sale</strong></p>
+	    <p class="text-muted">We will conduct the sale in a professional and efficient manner. We will conduct the sale with two objectives - A) Sell every available item and B) Maximize the proceeds from the sale. During the course of the sale, we may negotiate prices with customers, as we consider appropriate in order to achieve the two objectives stated above. We normally hold all prices firm the first day and lower the prices on the second or last day of the sale. However, you may establish minimum prices for a small number of items, if it is agreed upon before this contract is signed. To assist with the sale, we will hire as many individuals as we believe are reasonably necessary, from a pool of honest, experienced, reliable individuals that we hire for that purpose.
+	    </p>
+	    <p><strong>Disposal of Unsold Items</strong></p>
+            <p class="text-muted">There will be unsold items at the conclusion of the sale. We will be glad to suggest name of charities that will pick up the unsold items at your convenience or we will arrange at our expense to have these items removed from your property. We have found that most clients prefer to go through the unsold items at the conclusion of the sale.
+            </p>
         </div>
-      {% endfor %}
+      </section>
+      <!--Section: Content-->
+
+      <hr class="my-5" />
+
     </div>
-  </div>
-  <div class='spacing'></div>
-</div>
+  </main>
+  <!--Main layout-->
+
+  <footer class="bg-light text-lg-start">
+    <hr class="m-0" />
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2021 Copyright:
+      <a class="text-dark" href="https://judyhigdonestatesales.com/">Judy Higdon Estate Sale Services</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!--Footer-->
+    <!--  -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
