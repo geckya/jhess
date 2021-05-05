@@ -1,49 +1,115 @@
----
-layout: default
-title: Contact
-section_id: contact
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Judy Higdon Estate Sale Services</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+      <!--Main Navigation-->
+  <header>
+    <style>
+      .navbar .nav-link {
+        color: #333 !important;
+      }
+    </style>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand nav-link"  href="index.html">
+          <img alt="Judy Higdon Estate Sale Services" src="images/jhess_logo.png"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+          aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 py-5">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>                
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="estate-sales.html">Estate Sales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
 
-<div class='full parallax' style='background-image: url(images/vasesandclocks.png); color: #fff;'>
-  <div class='row'>
-    <div class='large-12 columns'>
-      {% include section-header.html title="Contact Us" tagline="" color="#fff" class="big" %}
-    </div>
-  </div>
-  <div class='four spacing'></div>
-</div>
+          <ul class="navbar-nav list-inline">
+            <!-- Icons -->
+            <li class="">
+              <a class="nav-link" href="https://www.facebook.com/judyhigdonestatesaleservices">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
 
-  <div class='full'>
-    <div class='row'>
-      <div class='medium-8 columns'>
-        <div class='form'>
-          <div class='row'>
-            <form method='POST' action="https://formspree.io/jahigdon54@yahoo.com">
-              <div class='large-12 columns'>
-                <p id='thanks' style='display: none;'>
-                  Thanks for contacting us, we'll be in touch soon!
-                </p>
-              </div>
-              <div class='medium-12 columns'>
-                <input class='required' name='name' placeholder='NAME' type='text'>
-                <input class='required email' name='email' placeholder='EMAIL' type='text'>
-                <input class='required' name='subject' placeholder='SUBJECT' type='text'>
-                <textarea class='required' name='message' placeholder='MESSAGE'></textarea>
-                <input class='button white' type='submit'>
-              </div>
-            </form>
+  <!--Main Navigation-->
+
+  <!--Main layout-->
+  <main class="mt-5">
+    <div class="container">
+      <!--Section: Content-->
+      <section>
+        <div class="row">
+          <div class="col-md-6 gx-5 mb-4">
+            <div class="bg-image hover-overlay ripple shadow-2-strong" data-mdb-ripple-color="light">
+              <img src="images/sittingroom.jpg" class="img-fluid" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 gx-5 mb-4">
+            <h4><strong>Phone:</strong></h4>
+            <p class="text-muted">972.816.4514</p>
+            <h4><strong>E-mail:</strong></h4>
+            <p class="text-muted">jahigdon54@yahoo.com</p>
+	    <h4>Follow us on Facebook to receive notice of upcoming sales!</h4>
           </div>
         </div>
-        <div class='two spacing'></div>
-      </div>
-      <div class='medium-4 columns'>
-        <div class='contact-details'>
-	  <p></p>
-	  <h4>Email:</h4>
-          <p>jahigdon54@yahoo.com</p>
-        </div>
-      </div>
+      </section>
+      <!--Section: Content-->
+
     </div>
-  </div>
-  <div class='four spacing'></div>
-</div>
+  </main>
+  <!--Main layout-->
+
+  <footer class="bg-light text-lg-start">
+    <hr class="m-0" />
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2021 Copyright:
+      <a class="text-dark" href="https://judyhigdonestatesales.com/">Judy Higdon Estate Sale Services</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!--Footer-->
+    <!--  -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
